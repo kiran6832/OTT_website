@@ -9,10 +9,19 @@ import mustwatchmovie from '../assests/mustwatchmovie.png'
 import newrelese from '../assests/newrelease.png'
 import rightArrow from '../assests/rightArrow.png'
 import leftArrow from '../assests/leftArrow.png'
+import movoesShows from '../assests/movoesShows.png'
 const MoviesShowsPage = () => {
   return (
     <div>
       <Navbar/>
+       <div className='relative   min-h-screen px-[10px] md:px-[120px]' >
+              <img src={movoesShows} alt='hero' className=' w-full md:h-[500px] '></img>
+              <div className='absolute md:top-[300px] flex flex-col items-center gap-4 md:gap-12 '>
+              <h1 className='font-bold text-[32px] md:text-[58px] text-center'>The Best Streaming Experience</h1>
+              <p className='text-[18px] text-gray-600 text-center'>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.</p>
+             <button className='bg-red-600 py-[18px] px-[24px] rounded-[8px]'>Start watching now</button>
+              </div>
+          </div>
      <div className='relative border border-gray-800 rounded-[10px] p-8 md:mx-[100px]'>
         <button className='absolute  top-[-20px] bg-red-600 py-[10px] px-[18px] rounded-[8px]'>Movies</button>
         <section className=''>

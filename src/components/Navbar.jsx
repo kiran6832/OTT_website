@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../assests/logo.png'
+import { AiOutlineSearch } from 'react-icons/ai';
+import { MdNotificationsNone } from 'react-icons/md';
 const Navbar = () => {
     const menu=[
       {
@@ -20,7 +22,7 @@ const Navbar = () => {
         name:"Subscriptions"
       }]
   return (
-    <div className='flex items-center justify-between  px-4 md:px-[120px] py-[30px]'>
+    <div className='flex items-center justify-between  px-4 md:px-[120px] py-[30px] z-10 relative'>
       <div className='flex items-center'>
         <img src={logo} className='w-[32px] h-[32px]'></img>
          <h1>StreamVibe</h1>
@@ -34,8 +36,9 @@ const Navbar = () => {
            }
         </div>
         <div className='hidden md:flex items-center justify-between gap-4'>
-            <p>Search</p>
-            <p>Noti</p>
+            <AiOutlineSearch/>
+            <MdNotificationsNone/>
+            
         </div>
         <p className='block md:hidden'>Menu</p>
     </div>

@@ -66,7 +66,7 @@ const Home = () => {
                 <img src={generes} className='h-[240px]'></img>
                 <div className='flex justify-between'>
                   <p>Action</p>
-                  <p>---</p>
+                  <img src={rightArrow} className=' w-[32px] h-[32px] '></img>
                   </div>
                 </div>
              
@@ -77,7 +77,7 @@ const Home = () => {
         }
       </div>
       </section>
-       <section className='md:px-[120px] my-24'>
+       <section className='px-[8px] md:px-[120px] my-24'>
         <h1 className='font-bold text-[38px] text-center md:text-start'>We Provide you streaming experience across various devices.</h1>
         <p className='text-[18px] text-gray-600 text-center md:text-start'>With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.</p>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-16'>

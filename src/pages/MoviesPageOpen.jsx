@@ -1,11 +1,20 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import moviesImage from '../assests/moviesOpen.png'
 const MoviesPageOpen = () => {
   return (
     <div>
       <Navbar/>
-      <section className='flex gap-6 md:mx-[100px] w-full'>
+       <div className='relative   min-h-screen px-[10px] md:px-[120px]' >
+                    <img src={moviesImage} alt='hero' className='w-full md:h-[500px] '></img>
+                    <div className='absolute md:top-[300px] flex flex-col items-center gap-4 md:gap-12 '>
+                    <h1 className='font-bold text-[32px] md:text-[58px] text-center'>Kantara</h1>
+                    <p className='text-[18px] text-gray-600 text-center'>A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands.</p>
+                   <button className='bg-red-600 py-[18px] px-[24px] rounded-[8px]'>Play Now</button>
+                    </div>
+                </div>
+      <section className='flex gap-6 md:mx-[100px] w-full mt-16'>
         <div className='space-y-4 w-[1057px]'>
           <div className='bg-[#1A1A1A] rounde-[12px] p-2'>
             <p>Description</p>
